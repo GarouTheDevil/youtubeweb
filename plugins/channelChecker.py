@@ -19,7 +19,7 @@ async def CheckUserinChannel(c, m):
 
 async def inChannel(client,message):
         try: 
-            await client.get_chat_member("aryan_bots", message.from_user.id)
+            await client.get_chat_member("DevilBotz", message.from_user.id)
             return True
         except Exception :
             return False
@@ -30,7 +30,7 @@ async def inChannel(client,message):
 async def sendJoinmsg(message):
     joinButton=InlineKeyboardMarkup([
 
-        [InlineKeyboardButton("Join Update Channel", url="https://t.me/aryan_bots")]  
+        [InlineKeyboardButton("Join Update Channel", url="https://t.me/DevilBotz")]  
     
     ])
     await message.reply_text("join channel To access Bot 🔐 " ,reply_markup = joinButton)
